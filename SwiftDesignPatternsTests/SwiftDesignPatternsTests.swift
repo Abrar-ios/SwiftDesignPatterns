@@ -32,5 +32,26 @@ final class SwiftDesignPatternsTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    func testConcurrentUsage() {
+        let concurrentQueue = DispatchQueue(label: "concurrentQueue", attributes: .concurrent)
+        
+        let exp = expectation(description: "Using AppSettings.shared from multiple thread shell succeed")
+        
+        let callCount = 100
+        for callIndex in 1...callCount {
+            concurrentQueue.async {
+                AppSettings.shared.set(value: callIndex, for: String(callIndex))
+            }
+        }
+        
+        while AppSettings.shared.int(for: String(callCount)) != callCount {
+            
+        }
+        exp.fulfill()
+        waitForExpectations(timeout: 5) { (error) in
+            XCTAssertNil(error, "Test expectation has been failed")
+        }
+    }
 
 }
