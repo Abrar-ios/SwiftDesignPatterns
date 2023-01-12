@@ -16,6 +16,7 @@
 		167181F82970B6A7004A5111 /* SwiftDesignPatternsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167181F72970B6A7004A5111 /* SwiftDesignPatternsTests.swift */; };
 		167182022970B6A7004A5111 /* SwiftDesignPatternsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167182012970B6A7004A5111 /* SwiftDesignPatternsUITests.swift */; };
 		167182042970B6A7004A5111 /* SwiftDesignPatternsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167182032970B6A7004A5111 /* SwiftDesignPatternsUITestsLaunchTests.swift */; };
+          167181CF2970A2B4004A5111 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167181CE2970A2B4004A5111 /* AppSettings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		167181FD2970B6A7004A5111 /* SwiftDesignPatternsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftDesignPatternsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		167182012970B6A7004A5111 /* SwiftDesignPatternsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDesignPatternsUITests.swift; sourceTree = "<group>"; };
 		167182032970B6A7004A5111 /* SwiftDesignPatternsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDesignPatternsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+          167181CE2970A2B4004A5111 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				167181E02970B6A6004A5111 /* AppDelegate.swift */,
 				167181E22970B6A6004A5111 /* SceneDelegate.swift */,
 				167181E42970B6A6004A5111 /* ViewController.swift */,
+                167181CE2970A2B4004A5111 /* AppSettings.swift */,
 				167181E62970B6A6004A5111 /* Main.storyboard */,
 				167181E92970B6A7004A5111 /* Assets.xcassets */,
 				167181EB2970B6A7004A5111 /* LaunchScreen.storyboard */,
@@ -261,6 +264,7 @@
 				167181E52970B6A6004A5111 /* ViewController.swift in Sources */,
 				167181E12970B6A6004A5111 /* AppDelegate.swift in Sources */,
 				167181E32970B6A6004A5111 /* SceneDelegate.swift in Sources */,
+                167181CF2970A2B4004A5111 /* AppSettings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
