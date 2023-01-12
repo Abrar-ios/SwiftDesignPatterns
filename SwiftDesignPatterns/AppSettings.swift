@@ -22,4 +22,8 @@ final public class AppSettings {
         return settings[key] as? Int
     }
     
+    public func set(value: Any, for key: String) {
+        settings[key] = value
+    }
+    
 }
