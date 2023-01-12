@@ -14,4 +14,12 @@ final public class AppSettings {
     
     private init(){}
     
+    public func string(for key: String) -> String? {
+        return settings[key] as? String
+    }
+    
+    public func int(for key: String) -> Bool? {
+        return settings[key] as? Bool
+    }
+    
 }
