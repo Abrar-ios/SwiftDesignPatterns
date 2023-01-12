@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+final public class AppSettings {
+    
+}
