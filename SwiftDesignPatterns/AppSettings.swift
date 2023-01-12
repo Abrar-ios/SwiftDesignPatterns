@@ -8,5 +8,8 @@
 import Foundation
 
 final public class AppSettings {
+    public static let shared = AppSettings()
+    
+    private init(){}
     
 }
