@@ -18,8 +18,8 @@ final public class AppSettings {
         return settings[key] as? String
     }
     
-    public func int(for key: String) -> Bool? {
-        return settings[key] as? Bool
+    public func int(for key: String) -> Int? {
+        return settings[key] as? Int
     }
     
 }
