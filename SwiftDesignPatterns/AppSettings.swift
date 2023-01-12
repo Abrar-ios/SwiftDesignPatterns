@@ -10,6 +10,8 @@ import Foundation
 final public class AppSettings {
     public static let shared = AppSettings()
     
+    var settings : [String:Any] = ["DeveloperModeEnabled": 1, "AllowToUpload": 0, "GreetingLogo":"welcome"]
+    
     private init(){}
     
 }
