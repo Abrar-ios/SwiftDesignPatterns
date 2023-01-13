@@ -37,7 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1658CCBE29717B1200BF1EDF /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		1658CCBE29717B1200BF1EDF /* CloningValueType.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CloningValueType.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		1658CCBF29717D5900BF1EDF /* CloningReferenceType.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CloningReferenceType.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		167181CE2970A2B4004A5111 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		167181DD2970B6A6004A5111 /* SwiftDesignPatterns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDesignPatterns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		167181E02970B6A6004A5111 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -90,7 +91,8 @@
 		1658CCBC29717AC600BF1EDF /* Prototype */ = {
 			isa = PBXGroup;
 			children = (
-				1658CCBE29717B1200BF1EDF /* MyPlayground.playground */,
+				1658CCBE29717B1200BF1EDF /* CloningValueType.playground */,
+				1658CCBF29717D5900BF1EDF /* CloningReferenceType.playground */,
 			);
 			path = Prototype;
 			sourceTree = "<group>";
