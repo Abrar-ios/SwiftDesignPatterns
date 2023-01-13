@@ -1,4 +1,10 @@
-class NameClass {
+import Foundation
+
+class NameClass: NSCopying {
+    
+    func copy(with zone: NSZone? = nil) -> Any {
+        return NameClass(firstName: self.firstName, lastName: self.lastName)
+    }
     
     var firstName: String
     var lastName: String
@@ -17,7 +23,7 @@ extension NameClass: CustomStringConvertible {
 }
 
 var usman = NameClass(firstName: "Usman", lastName: "Salman")
-var jawad = usman
+var jawad = usman.copy() as! NameClass
 print(usman)
 print(jawad)
 
