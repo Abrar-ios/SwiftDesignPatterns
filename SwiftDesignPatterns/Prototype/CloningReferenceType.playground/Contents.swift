@@ -14,6 +14,10 @@ class NameClass: NSCopying {
         self.lastName = lastName
     }
     
+    func clone() -> NameClass {
+        return self.copy() as! NameClass
+    }
+    
 }
 
 extension NameClass: CustomStringConvertible {
@@ -23,7 +27,7 @@ extension NameClass: CustomStringConvertible {
 }
 
 var usman = NameClass(firstName: "Usman", lastName: "Salman")
-var jawad = usman.copy() as! NameClass
+var jawad = usman.clone()
 print(usman)
 print(jawad)
 
