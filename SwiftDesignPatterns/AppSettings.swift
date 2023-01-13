@@ -10,7 +10,7 @@ import Foundation
 final public class AppSettings {
     public static let shared = AppSettings()
     
-    private let serialQueue = DispatchQueue(label: "SerialQueue")
+    private let concurrentQueue = DispatchQueue(label: "concurrentQueue", attributes: .concurrent)
     
     var settings : [String:Any] = ["DeveloperModeEnabled": 1, "AllowToUpload": 0, "GreetingLogo":"welcome"]
     
@@ -18,7 +18,7 @@ final public class AppSettings {
     
     public func string(for key: String) -> String? {
         var result : String?
-        serialQueue.sync {
+        concurrentQueue.sync {
             result = settings[key] as? String
         }
         return result
@@ -26,15 +26,15 @@ final public class AppSettings {
     
     public func int(for key: String) -> Int? {
         var result : Int?
-        serialQueue.sync {
+        concurrentQueue.sync {
             result = settings[key] as? Int
         }
         return result
     }
     
     public func set(value: Any, for key: String) {
-        serialQueue.sync {
-            settings[key] = value
+        concurrentQueue.async(flags: .barrier) {
+            self.settings[key] = value
         }
     }
     
