@@ -10,6 +10,8 @@ import Foundation
 final public class AppSettings {
     public static let shared = AppSettings()
     
+    private let serialQueue = DispatchQueue(label: "SerialQueue")
+    
     var settings : [String:Any] = ["DeveloperModeEnabled": 1, "AllowToUpload": 0, "GreetingLogo":"welcome"]
     
     private init(){}
@@ -23,7 +25,9 @@ final public class AppSettings {
     }
     
     public func set(value: Any, for key: String) {
-        settings[key] = value
+        serialQueue.sync {
+            settings[key] = value
+        }
     }
     
 }
