@@ -17,11 +17,19 @@ final public class AppSettings {
     private init(){}
     
     public func string(for key: String) -> String? {
-        return settings[key] as? String
+        var result : String?
+        serialQueue.sync {
+            result = settings[key] as? String
+        }
+        return result
     }
     
     public func int(for key: String) -> Int? {
-        return settings[key] as? Int
+        var result : Int?
+        serialQueue.sync {
+            result = settings[key] as? Int
+        }
+        return result
     }
     
     public func set(value: Any, for key: String) {
