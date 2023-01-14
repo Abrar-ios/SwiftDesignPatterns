@@ -50,3 +50,22 @@ for gateway in paymentGateways {
 print(total)
 
 
+// third class that doesn't conform to PaymentGateway
+
+class AmazonPayments {
+    var payments: Double = 0.0
+    
+    func paid(value: Double, currency:String){
+        payments += value
+        print("Paid \(currency)\(value) via Amazon Payments")
+    }
+    
+    func fullfilledTransection() -> Double {
+        return payments
+    }
+}
+
+let amazonPayment = AmazonPayments()
+amazonPayment.paid(value: 100, currency: "USD")
+amazonPayment.paid(value: 40, currency: "USD")
+
