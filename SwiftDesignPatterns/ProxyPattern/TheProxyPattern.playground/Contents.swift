@@ -11,3 +11,6 @@ class RandomIntWithId {
         return UUID().uuidString
     }()
 }
+
+let n = RandomIntWithId()
+print(n.uid)
