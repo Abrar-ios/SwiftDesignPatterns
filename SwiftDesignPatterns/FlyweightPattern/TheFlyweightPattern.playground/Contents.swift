@@ -24,9 +24,9 @@ class SpaceShip {
 let fleetSizes = 1000
 var ships = [SpaceShip]()
 var vertices = [Float](repeating: 0, count: 1000)
-
+let sharedState = SharedSpaceShipData(mesh: vertices, imageName: "SpaceShip")
 for _ in 0..<fleetSizes {
-    let ship = SpaceShip(mesh: vertices, imageName: "SpaceShip", position: (Float.random(in: 0...100), Float.random(in: 0...100), Float.random(in: 0...100)))
+    let ship = SpaceShip(sharedData: sharedState, position: (Float.random(in: 0...100), Float.random(in: 0...100), Float.random(in: 0...100)))
     ships.append(ship)
     
 }
