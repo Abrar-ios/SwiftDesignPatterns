@@ -55,6 +55,10 @@
    * Same interface as the wrapped type
    * Adds new feature via recursive decorator composition
    * Implement using swift extension then don't need to modify the origional implementation and don't need to introduce new wrapper object
+
+#### Common Pitfalls
+     * Adding unrelated behavior to a type.
+     * Make sure dont violate the Single Responsibility Principle
      
      
      
