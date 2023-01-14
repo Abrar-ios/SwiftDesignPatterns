@@ -1,13 +1,21 @@
 import UIKit
 
-class SpaceShip {
+class SharedSpaceShipData {
     private let mesh: [Float]
     private let texture: UIImage?
-    private let position: (Float, Float, Float)
     
-    init(mesh: [Float], imageName name: String, position:(Float, Float, Float) = (0,0,0)) {
+    init(mesh: [Float], imageName name:String){
         self.mesh = mesh
         self.texture = UIImage(named: name)
+    }
+}
+
+class SpaceShip {
+    private let position: (Float, Float, Float)
+    private let intrinsicState: SharedSpaceShipData
+    
+    init(sharedData: SharedSpaceShipData, position:(Float, Float, Float) = (0,0,0)) {
+        self.intrinsicState = sharedData
         self.position = position
     }
     
