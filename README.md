@@ -1,4 +1,4 @@
-# SwiftDesignPatterns
+# DesignPatterns implementation using SWIFT
 
 ## Singleton Design Pattern
    It ensures there's only once instance of type exist.
