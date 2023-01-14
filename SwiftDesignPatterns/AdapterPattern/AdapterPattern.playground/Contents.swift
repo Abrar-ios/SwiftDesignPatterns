@@ -7,7 +7,7 @@ class PayPal: PaymentGateway {
     private var total = 0.0
     
     func receivePayment(amount: Double) {
-        total += total;
+        total += amount;
     }
     
     var totalPayments: Double {
@@ -20,7 +20,7 @@ class Stripe: PaymentGateway {
     private var total = 0.0
     
     func receivePayment(amount: Double) {
-        total += total
+        total += amount
     }
     
     var totalPayments: Double {
@@ -28,3 +28,25 @@ class Stripe: PaymentGateway {
         return total
     }
 }
+
+let paypal = PayPal()
+paypal.receivePayment(amount: 100)
+paypal.receivePayment(amount: 200)
+paypal.receivePayment(amount: 300)
+
+let stripe = Stripe()
+stripe.receivePayment(amount: 200)
+stripe.receivePayment(amount: 50)
+stripe.receivePayment(amount: 250)
+
+var paymentGateways: [PaymentGateway] = [paypal, stripe]
+
+var total = 0.0
+
+for gateway in paymentGateways {
+    total += gateway.totalPayments
+}
+
+print(total)
+
+
