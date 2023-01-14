@@ -35,8 +35,8 @@
      Here caller don't need complete implementation of type just a super class or protocol thus we can eliminate 
      dependencies between the implementation types and callers.
 #### Challenges.
-     * The factory method is limited to types that share a common protocol or super class. You must not enforce
-     protocol conferments to types that have different responsibilites just for sake of factory method design 
-     pattern
+     * The factory method is limited to types that share a common protocol or super class. You must not 
+     enforce protocol conferments to types that have different responsibilites just for sake of factory method
+     design pattern.
 
 
