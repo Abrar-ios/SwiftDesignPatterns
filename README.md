@@ -27,6 +27,16 @@
     need for more allocation, By using prototype we can clone object.
 #### Challenges.
      * Cloning reference type does not come for free
-     * The Prototype and clones need to be independent    
+     * The Prototype and clones need to be independent
+## The Factory Method Design Pattern 
+   Creates objects without exposing its type to callers
+#### Example
+     Polymorphism is practical example of Factory method where we've common super class or ones that confirm to a protocol,
+     Here caller don't need complete implementation of type just a super class or protocol thus we can eliminate 
+     dependencies between the implementation types and callers.
+#### Challenges.
+     * The factory method is limited to types that share a common protocol or super class. You must not enforce
+     protocol conferments to types that have different responsibilites just for sake of factory method design 
+     pattern
 
 
