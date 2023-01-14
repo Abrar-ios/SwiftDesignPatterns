@@ -44,9 +44,9 @@
 #### Adpater in Swift
      * Easy to implement using swift extensions
      * We don't need to introduce the wrapper type. instead we need to extend and add required methods and calculated properties.
-     It will help to modify types without changind onrigional implementations. This is the behviour which is our target
+     It will help to modify types without changing origional implementations. This is the behviour which is our target
 #### Common Mistake
-     * Trying to adapt an interface that does not provide the expected functionality.so before to start to implement the adapter
+     * Trying to adapt an interface that does not provide the expected functionality. so before to start to implement the Adapter
      make sure that you are using the right component
      
      
