@@ -57,6 +57,7 @@
 		167182032970B6A7004A5111 /* SwiftDesignPatternsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDesignPatternsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		16A4DCF22972E05400AD7EBE /* TheFactoryMethod.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TheFactoryMethod.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		16A4DCF42972F06400AD7EBE /* AdapterPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = AdapterPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		16FC6D03297310AD00290523 /* NLPFacadeDemo.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = NLPFacadeDemo.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +139,7 @@
 				16A4DCF12972E03A00AD7EBE /* TheFactoryMethod */,
 				16A4DCF32972F04500AD7EBE /* AdapterPattern */,
 				165E29492972FDBE007EF0A9 /* Decorator Pattern */,
+				16FC6D022973109000290523 /* Facade Pattern */,
 				167181E02970B6A6004A5111 /* AppDelegate.swift */,
 				167181E22970B6A6004A5111 /* SceneDelegate.swift */,
 				167181E42970B6A6004A5111 /* ViewController.swift */,
@@ -180,6 +182,14 @@
 				16A4DCF42972F06400AD7EBE /* AdapterPattern.playground */,
 			);
 			path = AdapterPattern;
+			sourceTree = "<group>";
+		};
+		16FC6D022973109000290523 /* Facade Pattern */ = {
+			isa = PBXGroup;
+			children = (
+				16FC6D03297310AD00290523 /* NLPFacadeDemo.playground */,
+			);
+			path = "Facade Pattern";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
