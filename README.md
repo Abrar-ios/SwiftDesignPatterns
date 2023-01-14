@@ -72,6 +72,19 @@
      * Keep Facade pattern simple(avoid to add too many responsibilities to Facade)
      * Do not leak/expose detail of underlying type (consumer should only interact with the Facade not with underlying type )
      
+## The Flyweight Pattern
+   Reduces memory usage by sharing common data between objects, in other words this pattern help to reduce memory and creation cost for similar objects.
+   we can apply when multiple objects those are rely on same immutable data
+#### Identify intrinsic, Shareable state
+     * Need to seperate the parts, that can change by a set of immutable properties.
+     * Unchanged part that stored in flyweight and are protected from changes (Intrinsic part)
+     * Extract the properties that can change (Extrinsic state) and pass them through the flyweight object when we need
+#### Common pitfalls
+     althoug there is no drawbacks but have some common pitfalls
+     * first make sure there is only one intrinsic state object e.g using singleton design patter or by introducing flyweight pattern 
+       always returned shared state
+   
+     
  
      
 
