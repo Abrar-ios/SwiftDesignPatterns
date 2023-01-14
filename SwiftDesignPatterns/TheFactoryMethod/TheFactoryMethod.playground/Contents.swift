@@ -42,3 +42,17 @@ jsonSerializer?.serialize()
 let plistSerializer = makeSerializer(.plist)
 plistSerializer?.serialize()
 
+struct SerializerFactory {
+    static func makeSerializer(_ type: Serializers) -> Serializable? {
+        var result : Serializable?
+        switch type {
+        case .json: result = JSONSerialIzer()
+        case .plist: result = PlistSerialIzer()
+        case .xml: result = XMLSerialIzer()
+        }
+        return result
+    }
+}
+
+let xmlSerializer = SerializerFactory.makeSerializer(.xml)
+xmlSerializer?.serialize()
