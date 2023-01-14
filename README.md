@@ -38,5 +38,18 @@
      * The factory method is limited to types that share a common protocol or super class. You must not 
      enforce protocol conferments to types that have different responsibilites just for sake of factory method
      design pattern.
+## Adpater Design Pattern
+   Wraps an incompatible type and exposes an interface that's familiar to the caller. Adpter return results to the caller
+   through compatible interface
+#### Adpater in Swift
+     * Easy to implement using swift extensions
+     * We don't need to introduce the wrapper type. instead we need to extend and add required methods and calculated properties.
+     It will help to modify types without changind onrigional implementations. This is the behviour which is our target
+#### Common Mistake
+     * Trying to adapt an interface that does not provide the expected functionality.so before to start to implement the adapter
+     make sure that you are using the right component
+     
+     
+     
 
 
