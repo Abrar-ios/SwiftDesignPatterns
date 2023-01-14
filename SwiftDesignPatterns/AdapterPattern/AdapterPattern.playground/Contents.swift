@@ -69,3 +69,28 @@ let amazonPayment = AmazonPayments()
 amazonPayment.paid(value: 100, currency: "USD")
 amazonPayment.paid(value: 40, currency: "USD")
 
+class AmazonPaymentsAdapter: PaymentGateway {
+    func receivePayment(amount: Double) {
+        amazonPayment.paid(value: 23.56, currency: "USD")
+    }
+    
+    var totalPayments: Double {
+        let total = amazonPayment.payments
+        print("Total payments received via Amazon Payments:\(total)")
+        return total
+    }
+}
+
+
+let amazonPaymentAdapter = AmazonPaymentsAdapter()
+amazonPaymentAdapter.receivePayment(amount: 456)
+amazonPaymentAdapter.receivePayment(amount: 435)
+
+paymentGateways.append(amazonPaymentAdapter)
+
+var totalCollection = 0.0
+for gateway in paymentGateways {
+    totalCollection += gateway.totalPayments
+}
+
+print(totalCollection)
