@@ -61,7 +61,18 @@
      * Make sure don't violate the Single Responsibility Principle
      * Make sure don't need to refactor dependencies which are using real object by adding new behavior using decorator
      
+## The Facade Design Pattern
+   This pattern hides the complexity and lets us work with a more convenient interface.(simplefies the useage of complex types)
+#### Application of FACADE 
+     * Simplefies useage of complex types
+     * Exposes the subset of available functionality
+     * decouple the consumer site from these complicated interfaces
+     * shields consumer/caller from frequently changing beta components
+#### Common pitfalls
+     * Keep Facade pattern simple(avoid to add too many responsibilities to Facade)
+     * Do not leak/expose detail of underlying type (consumer should only interact with the Facade not with underlying type )
      
+ 
      
 
 
