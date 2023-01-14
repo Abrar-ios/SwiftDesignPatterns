@@ -41,6 +41,7 @@
 		1658CCBF29717D5900BF1EDF /* CloningReferenceType.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CloningReferenceType.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		165E294A2972FDDF007EF0A9 /* Decorator via object.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Decorator via object.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		165E294B297307C0007EF0A9 /* Decorator via extension.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Decorator via extension.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		1664F3FB29733C020076E351 /* TheFlyweightPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TheFlyweightPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		167181CE2970A2B4004A5111 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		167181DD2970B6A6004A5111 /* SwiftDesignPatterns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDesignPatterns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		167181E02970B6A6004A5111 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +112,14 @@
 			path = "Decorator Pattern";
 			sourceTree = "<group>";
 		};
+		1664F3FA29733BE50076E351 /* FlyweightPattern */ = {
+			isa = PBXGroup;
+			children = (
+				1664F3FB29733C020076E351 /* TheFlyweightPattern.playground */,
+			);
+			path = FlyweightPattern;
+			sourceTree = "<group>";
+		};
 		167181D42970B6A6004A5111 = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +149,7 @@
 				16A4DCF32972F04500AD7EBE /* AdapterPattern */,
 				165E29492972FDBE007EF0A9 /* Decorator Pattern */,
 				16FC6D022973109000290523 /* Facade Pattern */,
+				1664F3FA29733BE50076E351 /* FlyweightPattern */,
 				167181E02970B6A6004A5111 /* AppDelegate.swift */,
 				167181E22970B6A6004A5111 /* SceneDelegate.swift */,
 				167181E42970B6A6004A5111 /* ViewController.swift */,
