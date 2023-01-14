@@ -58,7 +58,8 @@
 
 #### Common Pitfalls
      * Adding unrelated behavior to a type.
-     * Make sure dont violate the Single Responsibility Principle
+     * Make sure don't violate the Single Responsibility Principle
+     * Make sure don't need to refactor dependencies which are using real object by adding new behavior using decorator
      
      
      
