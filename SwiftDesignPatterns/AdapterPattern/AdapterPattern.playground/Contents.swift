@@ -65,11 +65,7 @@ class AmazonPayments {
     }
 }
 
-let amazonPayment = AmazonPayments()
-amazonPayment.paid(value: 100, currency: "USD")
-amazonPayment.paid(value: 40, currency: "USD")
-
-class AmazonPaymentsAdapter: PaymentGateway {
+extension AmazonPayments: PaymentGateway {
     func receivePayment(amount: Double) {
         amazonPayment.paid(value: 23.56, currency: "USD")
     }
@@ -81,12 +77,11 @@ class AmazonPaymentsAdapter: PaymentGateway {
     }
 }
 
+let amazonPayment = AmazonPayments()
+amazonPayment.receivePayment(amount: 456)
+amazonPayment.receivePayment(amount: 435)
 
-let amazonPaymentAdapter = AmazonPaymentsAdapter()
-amazonPaymentAdapter.receivePayment(amount: 456)
-amazonPaymentAdapter.receivePayment(amount: 435)
-
-paymentGateways.append(amazonPaymentAdapter)
+paymentGateways.append(amazonPayment)
 
 var totalCollection = 0.0
 for gateway in paymentGateways {
