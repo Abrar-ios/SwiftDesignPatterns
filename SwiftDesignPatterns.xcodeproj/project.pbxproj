@@ -39,6 +39,8 @@
 /* Begin PBXFileReference section */
 		1658CCBE29717B1200BF1EDF /* CloningValueType.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CloningValueType.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		1658CCBF29717D5900BF1EDF /* CloningReferenceType.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CloningReferenceType.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		165E294A2972FDDF007EF0A9 /* Decorator via object.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Decorator via object.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		165E294B297307C0007EF0A9 /* Decorator via extension.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Decorator via extension.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		167181CE2970A2B4004A5111 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		167181DD2970B6A6004A5111 /* SwiftDesignPatterns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDesignPatterns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		167181E02970B6A6004A5111 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +101,15 @@
 			path = Prototype;
 			sourceTree = "<group>";
 		};
+		165E29492972FDBE007EF0A9 /* Decorator Pattern */ = {
+			isa = PBXGroup;
+			children = (
+				165E294A2972FDDF007EF0A9 /* Decorator via object.playground */,
+				165E294B297307C0007EF0A9 /* Decorator via extension.playground */,
+			);
+			path = "Decorator Pattern";
+			sourceTree = "<group>";
+		};
 		167181D42970B6A6004A5111 = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +137,7 @@
 				1658CCBC29717AC600BF1EDF /* Prototype */,
 				16A4DCF12972E03A00AD7EBE /* TheFactoryMethod */,
 				16A4DCF32972F04500AD7EBE /* AdapterPattern */,
+				165E29492972FDBE007EF0A9 /* Decorator Pattern */,
 				167181E02970B6A6004A5111 /* AppDelegate.swift */,
 				167181E22970B6A6004A5111 /* SceneDelegate.swift */,
 				167181E42970B6A6004A5111 /* ViewController.swift */,
