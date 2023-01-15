@@ -49,8 +49,42 @@ final class Queue<T> {
     }
 }
 
+struct QueueIterator<T>: IteratorProtocol {
+    private let queue: Queue<T>?
+    private var currentNode: Node<T>?
+    
+    init(_ queue: Queue<T>){
+        self.queue = queue
+        self.currentNode = queue.head
+    }
+    
+    mutating func next() -> T? {
+        guard let node = currentNode else {
+            return nil
+        }
+        
+        let nextKey = currentNode?.key
+        currentNode = node.next
+        return nextKey
+    }
+}
+
+extension Queue: Sequence {
+    func makeIterator() -> QueueIterator<T> {
+        QueueIterator(self)
+    }
+}
+
 var queue = Queue<Int>()
 queue.enqueue(1)
 queue.enqueue(2)
 
+for item in queue {
+    print(item)
+}
 
+var queueIterator = queue.makeIterator()
+
+while let item = queueIterator.next() {
+    print(item)
+}
