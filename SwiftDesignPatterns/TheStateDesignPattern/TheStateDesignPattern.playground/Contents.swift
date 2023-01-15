@@ -1,10 +1,48 @@
 
 import Foundation
 
+fileprivate protocol CoffeeMachineState {
+    func isReadyToBrew() -> Bool
+    func brew()
+}
+
+extension CoffeeMachineState {
+    func isReadyToBrew() -> Bool {
+        print("\(#function) not implemented for \(self) state")
+        return false
+    }
+    
+    func brew() {
+        print("\(#function) not implemented for \(self) state")
+    }
+}
+
+fileprivate struct StandbyState: CoffeeMachineState {
+    
+}
+
+fileprivate struct FillWaterTankState: CoffeeMachineState {
+    
+}
+
+fileprivate struct EmptyCapsuleBinState: CoffeeMachineState {
+    
+}
+
+fileprivate struct InsertCapsuleState: CoffeeMachineState {
+    
+}
+
+fileprivate struct BrewCoffeeState: CoffeeMachineState {
+    
+}
+
 class CoffeeMachine {
     private var isWaterTankFilled: Bool
     private var isCapsuleBinEmpty: Bool
     private var isCapsuleInserted: Bool
+    
+    fileprivate var state: CoffeeMachineState = StandbyState()
 
     required init(waterFilled: Bool, binEmpty: Bool, capsuleInserted: Bool) {
         isWaterTankFilled = waterFilled
