@@ -1,6 +1,44 @@
 import UIKit
 import PlaygroundSupport
 
+protocol Observer {
+    func notify()
+    var uid: Int { get }
+}
+
+protocol Subject {
+    mutating func register(_ observer: Observer)
+    mutating func unregister(_ observer: Observer)
+}
+
+extension UILabel : Observer {
+    func notify() {
+        self.text = "Subject state changed"
+    }
+    
+    var uid: Int {
+        return ObjectIdentifier(self).hashValue
+    }
+}
+
+extension UIButton: Subject {
+    private static var observers = [Observer]()
+    
+    func register(_ observer: Observer) {
+        UIButton.observers.append(observer)
+    }
+    
+    func unregister(_ observer: Observer) {
+        UIButton.observers = UIButton.observers.filter{$0.uid != observer.uid}
+    }
+    
+    func onStateChange(){
+        UIButton.observers.forEach { (observer) in
+            observer.notify()
+        }
+    }
+}
+
 class MyViewController : UIViewController {
     var labels = [UILabel]()
     
@@ -13,12 +51,14 @@ class MyViewController : UIViewController {
         notifyButton.setTitleColor(.black, for: .normal)
         notifyButton.backgroundColor = .lightGray
         view.addSubview(notifyButton)
+        notifyButton.addTarget(self, action: #selector(onNotifyPressed(sender:)), for: UIControl.Event.touchUpInside)
 
         let unregisterButton = UIButton(frame: CGRect(x: 0, y: 100, width: 380, height: 44))
         unregisterButton.setTitle("Unregister observer", for: .normal)
         unregisterButton.setTitleColor(.white, for: .normal)
         unregisterButton.backgroundColor = .red
         view.addSubview(unregisterButton)
+        unregisterButton.addTarget(self, action: #selector(onUnregisterPressed(sender:)), for: UIControl.Event.touchUpInside)
 
         let labelCount = 10
         
@@ -28,11 +68,27 @@ class MyViewController : UIViewController {
             label.textColor = .black
             label.textAlignment = .center
             view.addSubview(label)
+            notifyButton.register(label)
             labels.append(label)
         }
         
         self.view = view
     }
+    
+    @objc func onNotifyPressed(sender: UIButton!){
+        sender.onStateChange()
+    }
+    
+    @objc func onUnregisterPressed(sender: UIButton!){
+        guard !labels.isEmpty else {
+            return
+        }
+        
+        let label = labels.removeFirst()
+        label.text = "Unregisterd"
+        sender.unregister(label)
+    }
+    
 }
 
 // Present the view controller in the Live View window
