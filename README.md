@@ -120,6 +120,12 @@
    * Usally Notification center is used to register observer to receive notifications where to find notifications and Notification center decouples observer and subject completely
  #### Unregister observer
       Make sure observers get unregistered from the subject before releasing them.
+      
+ ## The State Design Pattern.
+    Replace complex conditional logic with an object-oriented state machine. It helps us to exclude complex conditional logic from exisiting project. 
+    We first need to identify the steps that change the behavior of an object after that we need to encapsulate steps into dedicated state types.
+ #### Common Pitfalls.
+      It exposing the states to client, so the client must not interact with states directly
      
      
 
