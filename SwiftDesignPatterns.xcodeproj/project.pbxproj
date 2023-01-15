@@ -37,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		164DCB5A29742135002E11EB /* TheIteratorPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TheIteratorPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		1658CCBE29717B1200BF1EDF /* CloningValueType.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CloningValueType.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		1658CCBF29717D5900BF1EDF /* CloningReferenceType.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CloningReferenceType.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		165E294A2972FDDF007EF0A9 /* Decorator via object.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Decorator via object.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -88,6 +89,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		164DCB5929742112002E11EB /* IteratorPattern */ = {
+			isa = PBXGroup;
+			children = (
+				164DCB5A29742135002E11EB /* TheIteratorPattern.playground */,
+			);
+			path = IteratorPattern;
+			sourceTree = "<group>";
+		};
 		1658CCBB29717AB100BF1EDF /* Singleton */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +171,7 @@
 				1664F3FA29733BE50076E351 /* FlyweightPattern */,
 				1664F3FC297348640076E351 /* ProxyPattern */,
 				16F6288D2974188E006248B7 /* TheChainOfResponsibilityPattern */,
+				164DCB5929742112002E11EB /* IteratorPattern */,
 				167181E02970B6A6004A5111 /* AppDelegate.swift */,
 				167181E22970B6A6004A5111 /* SceneDelegate.swift */,
 				167181E42970B6A6004A5111 /* ViewController.swift */,
