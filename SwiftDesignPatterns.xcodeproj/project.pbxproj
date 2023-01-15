@@ -58,6 +58,7 @@
 		167181FD2970B6A7004A5111 /* SwiftDesignPatternsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftDesignPatternsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		167182012970B6A7004A5111 /* SwiftDesignPatternsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDesignPatternsUITests.swift; sourceTree = "<group>"; };
 		167182032970B6A7004A5111 /* SwiftDesignPatternsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDesignPatternsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		16A1541E29743C7400594856 /* TheStateDesignPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TheStateDesignPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		16A4DCF22972E05400AD7EBE /* TheFactoryMethod.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TheFactoryMethod.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		16A4DCF42972F06400AD7EBE /* AdapterPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = AdapterPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		16B13CF029743064009C2BCD /* TheObserverDesignPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TheObserverDesignPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -174,6 +175,7 @@
 				16F6288D2974188E006248B7 /* TheChainOfResponsibilityPattern */,
 				164DCB5929742112002E11EB /* IteratorPattern */,
 				16B13CEF29743040009C2BCD /* TheObserverPattern */,
+				16A1541D29743C4E00594856 /* TheStateDesignPattern */,
 				167181E02970B6A6004A5111 /* AppDelegate.swift */,
 				167181E22970B6A6004A5111 /* SceneDelegate.swift */,
 				167181E42970B6A6004A5111 /* ViewController.swift */,
@@ -200,6 +202,14 @@
 				167182032970B6A7004A5111 /* SwiftDesignPatternsUITestsLaunchTests.swift */,
 			);
 			path = SwiftDesignPatternsUITests;
+			sourceTree = "<group>";
+		};
+		16A1541D29743C4E00594856 /* TheStateDesignPattern */ = {
+			isa = PBXGroup;
+			children = (
+				16A1541E29743C7400594856 /* TheStateDesignPattern.playground */,
+			);
+			path = TheStateDesignPattern;
 			sourceTree = "<group>";
 		};
 		16A4DCF12972E03A00AD7EBE /* TheFactoryMethod */ = {
