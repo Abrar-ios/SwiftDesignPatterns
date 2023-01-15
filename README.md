@@ -117,6 +117,7 @@
    * Object > listener of changes happen in an other object
    * Subject > Notifier of change happen in object(Subject) to all other listener(Object)
    * The observers register themselves with the subject and subject updates all registered observers when its state changes
+   * Usally Notification center is used to register observer to receive notifications where to find notifications and Notification center decouples observer and subject completely
  #### Unregister observer
       Make sure observers get unregistered from the subject before releasing them.
      
