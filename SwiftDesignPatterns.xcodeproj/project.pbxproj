@@ -60,6 +60,7 @@
 		167182032970B6A7004A5111 /* SwiftDesignPatternsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDesignPatternsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		16A4DCF22972E05400AD7EBE /* TheFactoryMethod.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TheFactoryMethod.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		16A4DCF42972F06400AD7EBE /* AdapterPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = AdapterPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		16B13CF029743064009C2BCD /* TheObserverDesignPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TheObserverDesignPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		16F6288E297418BD006248B7 /* TheChainOfResponsibilityPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TheChainOfResponsibilityPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		16FC6D03297310AD00290523 /* NLPFacadeDemo.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = NLPFacadeDemo.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
@@ -172,6 +173,7 @@
 				1664F3FC297348640076E351 /* ProxyPattern */,
 				16F6288D2974188E006248B7 /* TheChainOfResponsibilityPattern */,
 				164DCB5929742112002E11EB /* IteratorPattern */,
+				16B13CEF29743040009C2BCD /* TheObserverPattern */,
 				167181E02970B6A6004A5111 /* AppDelegate.swift */,
 				167181E22970B6A6004A5111 /* SceneDelegate.swift */,
 				167181E42970B6A6004A5111 /* ViewController.swift */,
@@ -214,6 +216,14 @@
 				16A4DCF42972F06400AD7EBE /* AdapterPattern.playground */,
 			);
 			path = AdapterPattern;
+			sourceTree = "<group>";
+		};
+		16B13CEF29743040009C2BCD /* TheObserverPattern */ = {
+			isa = PBXGroup;
+			children = (
+				16B13CF029743064009C2BCD /* TheObserverDesignPattern.playground */,
+			);
+			path = TheObserverPattern;
 			sourceTree = "<group>";
 		};
 		16F6288D2974188E006248B7 /* TheChainOfResponsibilityPattern */ = {
