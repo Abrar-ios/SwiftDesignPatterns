@@ -109,6 +109,7 @@
    * Standard way to iterate over the elements of a collection
    * Extract traversal logic into a seperate type
    * Prevents exposing internal details of the data type
+   * Swift standard library exposes two protocols 1- Sequence 2- Iterator Protocol those help us to implement Iterator protocol
 #### Common Pitfalls
      consider the perfomance impact of custom iterators
      
