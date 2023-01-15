@@ -104,5 +104,14 @@
 #### Common Pitfalls
      * Don't use it when each request only handled by one responder or when the number of requests handler is limited.
      
+## The Iterator Pattern
+   Provide sequential access to the elements of an aggregate object
+   * Standard way to iterate over the elements of a collection
+   * Extract traversal logic into a seperate type
+   * Prevents exposing internal details of the data type
+#### Common Pitfalls
+     consider the perfomance impact of custom iterators
+     
+     
 
 
