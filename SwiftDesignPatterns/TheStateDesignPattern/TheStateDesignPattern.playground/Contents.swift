@@ -92,37 +92,11 @@ class CoffeeMachine {
         isCapsuleInserted = capsuleInserted
     }
     
-    private func isReadyToBrew() -> Bool {
-        var result = false
-        
-        if isWaterTankFilled {
-            if isCapsuleBinEmpty {
-                if isCapsuleInserted {
-                    result = true
-                    print("Coffee brewed")
-                }
-                else {
-                    print("Insert capsule!")
-                }
-            }
-            else {
-                print("Capsule bin full!")
-            }
-        } else {
-            print("Fill water tank!")
-        }
-        
-        return result
-    }
-    
     func brew() {
-        guard isReadyToBrew() else {
-            print("Can't make coffee")
-            return
-        }
-        print("Coffee ready!")
+        state = BrewCoffeeState(context: self)
+        state.brew()
     }
 }
 
-let coffeeMachine = CoffeeMachine(waterFilled: true, binEmpty: true, capsuleInserted: false)
+let coffeeMachine = CoffeeMachine(waterFilled: true, binEmpty: true, capsuleInserted: true)
 coffeeMachine.brew()
