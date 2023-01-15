@@ -112,6 +112,13 @@
    * Swift standard library exposes two protocols 1- Sequence 2- Iterator Protocol those help us to implement Iterator protocol
 #### Common Pitfalls
      consider the perfomance impact of custom iterators
+## The Observer Pattern
+   Lets objects subscribe for notifications without being tightly coupled to the sender
+   * Object > listener of changes happen in an other object
+   * Subject > Notifier of change happen in object(Subject) to all other listener(Object)
+   * The observers register themselves with the subject and subject updates all registered observers when its state changes
+ #### Unregister observer
+      Make sure observers get unregistered from the subject before releasing them.
      
      
 
