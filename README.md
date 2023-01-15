@@ -98,8 +98,11 @@
      * Do not exposed the proxy type directly in other words underlying type needs to be hidden
      * Clients should only able to interact with proxy object
    
-     
- 
+## The Chain of Responsibility Pattern
+   Decouples sender of request from its potential receivers.
+   Request travels in chain of objects until reach to object that one interested in request or reach the end of chain.
+#### Common Pitfalls
+     * Don't use it when each request only handled by one responder or when the number of requests handler is limited.
      
 
 
