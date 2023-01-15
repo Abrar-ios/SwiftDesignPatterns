@@ -22,18 +22,22 @@ fileprivate struct StandbyState: CoffeeMachineState {
 }
 
 fileprivate struct FillWaterTankState: CoffeeMachineState {
+    var context: CoffeeMachine
     
 }
 
 fileprivate struct EmptyCapsuleBinState: CoffeeMachineState {
+    var context: CoffeeMachine
     
 }
 
 fileprivate struct InsertCapsuleState: CoffeeMachineState {
+    var context: CoffeeMachine
     
 }
 
 fileprivate struct BrewCoffeeState: CoffeeMachineState {
+    var context: CoffeeMachine
     
 }
 
