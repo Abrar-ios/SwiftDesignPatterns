@@ -83,8 +83,8 @@
      * Extract the properties that can change (Extrinsic state) and pass them through the flyweight object when we need
 #### Common pitfalls
      althoug there is no drawbacks but have some common pitfalls
-     * first make sure there is only one intrinsic state object e.g using singleton design pattern or by introducing flyweight 
-     pattern always returned shared state
+     * first make sure there is only one intrinsic state object e.g using singleton design pattern or by introducing 
+     flyweight pattern always returned shared state
      
 ## The Proxy Pattern
    * Managing and controlling access to specific object
