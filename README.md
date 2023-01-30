@@ -47,8 +47,9 @@
      calculated properties.
      It will help to modify types without changing origional implementations. This is the behviour which is our target
 #### Common Mistake
-     * Trying to adapt an interface that does not provide the expected functionality. so before to start to implement the Adapter
-     make sure that you are using the right component
+     * Trying to adapt an interface that does not provide the expected functionality. so before to start to i
+     mplement the Adapter
+     * make sure that you are using the right component
 ## The Decorator Pattern
    Enhances existing types without changing their source codes
    * Flexible alternative to subclassing
