@@ -92,10 +92,10 @@
    * Provides controller, remote or delayed access
 #### Why we need aditional level of interaction rather than direct access
      * Delayed creation (lazy properties are best example of delayed creation)
-     * Local placeholder for remote resources e.g network proxy may batch of network requests before accessing Restful services or return cached data
-     instead of firing network requests.
-     * Protective Proxy (during use of protective/senstive resources) where protective proxy assures that caller has appropriate permissions to access
-     the component
+     * Local placeholder for remote resources e.g network proxy may batch of network requests before accessing Restful 
+     services or return cached data instead of firing network requests.
+     * Protective Proxy (during use of protective/senstive resources) where protective proxy assures that caller has 
+     appropriate permissions to access the component
 #### Common pitfalls
      * Do not exposed the proxy type directly in other words underlying type needs to be hidden
      * Clients should only able to interact with proxy object
@@ -119,7 +119,8 @@
    * Object > listener of changes happen in an other object
    * Subject > Notifier of change happen in object(Subject) to all other listener(Object)
    * The observers register themselves with the subject and subject updates all registered observers when its state changes
-   * Usally Notification center is used to register observer to receive notifications where to find notifications and Notification center decouples observer and subject completely
+   * Usally Notification center is used to register observer to receive notifications where to find notifications and Notification 
+   center decouples observer and subject completely
  #### Unregister observer
       Make sure observers get unregistered from the subject before releasing them.
       
